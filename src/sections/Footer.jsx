@@ -34,11 +34,10 @@ export function Footer() {
           </a>
           <p>{siteConfig.tagline}. Impresión DTF, bordado, serigrafía y sublimación en Panamá.</p>
           <div className="footer-social">
-            {/* Reemplaza "#" por tus perfiles reales */}
-            <a href="#" aria-label="Instagram de Printólogo">
+            <a href="https://instagram.com/printologo" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Printólogo">
               <InstagramIcon />
             </a>
-            <a href="#" aria-label="Facebook de Printólogo">
+            <a href="https://www.facebook.com/printologo" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Printólogo">
               <FacebookIcon />
             </a>
           </div>
@@ -66,8 +65,7 @@ export function Footer() {
             </li>
             <li>
               <Mail size={16} aria-hidden="true" />
-              {/* Reemplaza por el correo real de contacto */}
-              <a href="mailto:hola@printologo.com">hola@printologo.com</a>
+              <a href="mailto:printologo@gmail.com">printologo@gmail.com</a>
             </li>
             <li>
               <MapPin size={16} aria-hidden="true" />
