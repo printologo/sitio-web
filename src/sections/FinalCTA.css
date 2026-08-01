@@ -1,0 +1,24 @@
+.final-cta {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: var(--color-white);
+  padding-block: var(--space-2xl);
+}
+
+.final-cta-inner {
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.final-cta h2 {
+  font-size: var(--fs-h2);
+}
+
+.final-cta p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9);
+}

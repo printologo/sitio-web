@@ -1,0 +1,78 @@
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-lg);
+}
+
+.portfolio-filter {
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.portfolio-filter:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.portfolio-filter.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.portfolio-card {
+  border: none;
+  background: none;
+  padding: 0;
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: transform var(--transition-base);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.portfolio-card .product-visual {
+  width: 100%;
+  cursor: pointer;
+}
+
+.portfolio-modal {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.portfolio-modal h3 {
+  font-size: 1.25rem;
+}
+
+.portfolio-modal p {
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 720px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

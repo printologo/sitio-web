@@ -1,0 +1,30 @@
+.mobile-sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  padding: var(--space-xs) var(--space-sm);
+  padding-bottom: max(var(--space-xs), env(safe-area-inset-bottom));
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -8px 24px rgba(15, 15, 16, 0.08);
+}
+
+.mobile-sticky-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+@media (min-width: 640px) {
+  .mobile-sticky-cta {
+    display: none;
+  }
+}

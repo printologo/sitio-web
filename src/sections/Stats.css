@@ -1,0 +1,36 @@
+.stats {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding-block: var(--space-lg);
+}
+
+.stats-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stats-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-accent-light);
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 720px) {
+  .stats-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,26 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.badge-accent {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+}
+
+.badge-dark {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.badge-light {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}

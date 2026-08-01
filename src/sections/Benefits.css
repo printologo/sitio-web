@@ -1,0 +1,42 @@
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.benefits-item {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.benefits-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-black);
+  color: var(--color-accent-light);
+}
+
+.benefits-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.benefits-item p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 720px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
