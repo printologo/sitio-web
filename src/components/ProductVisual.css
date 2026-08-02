@@ -61,6 +61,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +84,9 @@
 }
 
 .product-visual-label {
+  min-width: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 0.95rem;

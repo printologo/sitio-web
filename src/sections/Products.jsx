@@ -19,7 +19,7 @@ export function Products() {
               <span className="products-item-icon">
                 <Icon name={product.icon} size={22} aria-hidden="true" />
               </span>
-              <span>{product.name}</span>
+              <span className="products-item-label">{product.name}</span>
             </li>
           ))}
         </ul>
