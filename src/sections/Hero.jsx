@@ -55,9 +55,6 @@ export function Hero() {
         <div className="hero-visual" aria-hidden="true">
           <div className="hero-visual-main">
             <ProductVisual
-              icon="shirt"
-              tag="DTF"
-              label="Camiseta full color"
               tone={1}
               size="lg"
               image={imgCamisetaFullColor}
@@ -66,9 +63,6 @@ export function Hero() {
           </div>
           <div className="hero-visual-card hero-visual-card-1">
             <ProductVisual
-              icon="crown"
-              tag="Bordado"
-              label="Gorra corporativa"
               tone={2}
               image={imgGorraCorporativa}
               loading="eager"
@@ -76,9 +70,6 @@ export function Hero() {
           </div>
           <div className="hero-visual-card hero-visual-card-2">
             <ProductVisual
-              icon="cup-soda"
-              tag="Sublimación"
-              label="Termo de marca"
               tone={4}
               image={imgTermoMarca}
               loading="eager"

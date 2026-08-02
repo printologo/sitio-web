@@ -38,10 +38,12 @@ export function ProductVisual({
       {tag && <span className="product-visual-tag">{tag}</span>}
 
       {hasImage ? (
-        <div className="product-visual-caption">
-          {icon && <Icon name={icon} className="product-visual-caption-icon" size={18} aria-hidden="true" />}
-          {label && <span className="product-visual-label">{label}</span>}
-        </div>
+        (icon || label) && (
+          <div className="product-visual-caption">
+            {icon && <Icon name={icon} className="product-visual-caption-icon" size={18} aria-hidden="true" />}
+            {label && <span className="product-visual-label">{label}</span>}
+          </div>
+        )
       ) : (
         <>
           <Icon name={icon} className="product-visual-icon" size={size === "lg" ? 46 : 34} aria-hidden="true" />
